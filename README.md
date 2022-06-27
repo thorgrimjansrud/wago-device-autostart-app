@@ -5,7 +5,7 @@ Requires some knowledge of Wago controllers.
 
 ## Create script
 
-Log in as root and create a script in init.d called "startmyapp", and make it executable:
+Log in as root and create a script in init.d called here "startmyapp", and make it executable:
 ```
 touch /etc/init.d/startmyapp
 chmod +x /etc/init.d/startmyapp
