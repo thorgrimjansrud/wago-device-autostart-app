@@ -28,5 +28,5 @@ ln -s /etc/init.d/startmyapp /etc/rc.d/S99_zz_startmyapp
 
 ## Test
 
-Run the script /etc/init.d/startmyapp or restart the controller. 
+Run the script /etc/init.d/startmyapp or just restart the controller. 
 Check logfile for output. 
