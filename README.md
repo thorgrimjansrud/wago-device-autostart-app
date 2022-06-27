@@ -1,5 +1,6 @@
 # Launch an app automatically
 A very basic example of creating a bash script that could launch a 3. party application.
+Example is general and does not work out of the box, some modifications needed.
 Requires some knowledge of Wago controllers. 
 
 
