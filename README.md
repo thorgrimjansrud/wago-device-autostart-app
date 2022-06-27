@@ -1,2 +1,30 @@
-# wago-device-autostart-app
-How to autostart applications on Wago devices
+# Launch an app automatically
+Requires some basic knowledge of Wago controllers. 
+
+## Create script
+
+Log in as root and create a script in init.d called "startmyapp", and make it executable:
+```
+touch /etc/init.d/startmyapp
+chmod +x /etc/init.d/startmyapp
+```
+
+Edit and add the fallowing lines. Change path and 3. party "APP" to wathever application on what path that should be started.
+E.g. /home/apps/bin:
+```
+#!/bin/sh
+PATH=/home/apps/bin:$PATH
+NAME=myapp
+APP start --name $NAME > /home/apps/mylog.log 2>&1
+exit 0
+```
+
+Create a symlink in rc.d:
+```
+ln -s /etc/init.d/startmyapp /etc/rc.d/S99_zz_startmyapp
+```
+
+## Test
+
+Launch the script /etc/init.d/startmyapp or restart the controller.
+Check logfile for output.
