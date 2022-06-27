@@ -1,5 +1,7 @@
 # Launch an app automatically
-Requires some basic knowledge of Wago controllers. 
+A very basic example of creating a bash script that could launch a 3. party application.
+Requires some knowledge of Wago controllers. 
+
 
 ## Create script
 
@@ -26,5 +28,5 @@ ln -s /etc/init.d/startmyapp /etc/rc.d/S99_zz_startmyapp
 
 ## Test
 
-Launch the script /etc/init.d/startmyapp or restart the controller.
-Check logfile for output.
+Run the script /etc/init.d/startmyapp or restart the controller. 
+Check logfile for output. 
