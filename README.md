@@ -11,13 +11,13 @@ touch /etc/init.d/startmyapp
 chmod +x /etc/init.d/startmyapp
 ```
 
-Edit and add the fallowing lines. Change path and 3. party "APP" to wathever application on what path that should be started.
+Edit and add the fallowing lines. Change path and 3. party "AppCommand" to wathever executable on what path that should be started.
 E.g. /home/apps/bin:
 ```
 #!/bin/sh
 PATH=/home/apps/bin:$PATH
 NAME=myapp
-APP start --name $NAME > /home/apps/mylog.log 2>&1
+AppCommand --name $NAME > /home/apps/mylog.log 2>&1
 exit 0
 ```
 
